@@ -1,0 +1,19 @@
+*********************************************************
+已弃用
+virtualenv --system-site-packages -p python3.9 venv
+source venv/bin/activate
+source /data2/yangyixin/code/venv/bin/activate
+deactivate
+*********************************************************
+
+conda create -n T2V python=3.9
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install ffmpeg
+pip install dlib-bin
+pip install -r requirements.txt
+
+use my updated requirements.txt
+https://github.com/Picsart-AI-Research/Text2Video-Zero/blob/37be6c43ae52d7ce1d789ad6a40935c23f51c4bd/requirements.txt
+
+
+CUDA_VISIBLE_DEVICES=3 python test.py
