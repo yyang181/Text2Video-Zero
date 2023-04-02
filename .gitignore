@@ -1,3 +1,4 @@
 __pycache__/
 annotator/ckpts/*
 text2video_A_horse_galloping_on_a_street.mp4
+*.mp4
